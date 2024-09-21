@@ -1,0 +1,32 @@
+.values {
+    padding: 40px 20px;
+    background-color: #fff;
+  }
+  
+  .value-cards {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .card {
+    width: 30%;
+    padding: 20px;
+    text-align: center;
+    background-color: #f5f5f5;
+  }
+  
+  h2, h3 {
+    font-size: 24px;
+  }
+  
+  @media (max-width: 768px) {
+    .value-cards {
+      flex-direction: column;
+    }
+  
+    .card {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  

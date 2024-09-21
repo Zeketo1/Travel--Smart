@@ -1,0 +1,148 @@
+.placeCon {
+    padding-top: 18vh;
+    margin: 0px 60px;
+}
+
+.popular{
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #14192ad6;
+    padding-bottom: 13px;
+}
+
+.placeText2 {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+
+.type {
+    font-size: 0.9rem;
+    color: #495B76;
+}
+
+.placeImage {
+    height: 280px;
+    width: 250px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.placeCard {
+    width: 250px;
+    
+}
+
+.placeContainer {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    row-gap: 20px;
+}
+
+.placeText {
+    font-size: 13px;
+}
+
+.type {
+    padding-bottom: 20px;
+}
+
+.text{
+    font-size: 1rem;
+    padding: 9px;
+}
+
+.placeText {
+    font-size: 0.7rem;
+    padding: 9px;
+}
+
+.mainBtn {
+    width: 100%;
+    padding: 40px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.placeBtn {
+    width: fit-content;
+    border: 1px solid #1c1919;
+    background-color: #ffffff00;
+    border-radius: 6px;
+    padding: 5px 17px;
+}
+
+@media (max-width: 1024px) {
+    .placeContainer {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns on medium screens */
+    }
+
+    .popular {
+        font-size: 2rem;
+    }
+
+    .type {
+        font-size: 0.85rem;
+    }
+
+    .placeImage {
+        height: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    .placeContainer {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+    }
+
+    .placeCon {
+        margin: 0px 30px;
+    }
+
+    .placeImage {
+        height: 220px;
+    }
+
+    .placeText2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .type {
+        text-align: center;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .placeContainer {
+        grid-template-columns: 1fr; /* 1 column on very small screens */
+        align-content: center;
+    }
+
+    .placeCon {
+        margin: 0px 10px;
+    }
+
+    .placeImage {
+        height: 200px;
+    }
+
+    .popular {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .type {
+        text-align: center;
+        font-size: 0.75rem;
+    }
+
+    .placeBtn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}

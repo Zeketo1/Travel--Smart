@@ -1,0 +1,30 @@
+.mission-vision {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 20px;
+    background-color: #e0f7fa;
+  }
+  
+  .mission, .vision {
+    width: 45%;
+  }
+  
+  h2 {
+    font-size: 24px;
+  }
+  
+  p {
+    font-size: 16px;
+  }
+  
+  @media (max-width: 768px) {
+    .mission-vision {
+      flex-direction: column;
+    }
+  
+    .mission, .vision {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  
